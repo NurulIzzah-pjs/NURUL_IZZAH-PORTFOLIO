@@ -9,6 +9,28 @@
   <link rel="stylesheet" href="assets/css/output.css">
   <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> -->
   <style>
+@media (min-width: 1025px) and (max-width: 1504px) {
+  #home {
+    
+    margin-left: 7%;
+  }
+
+  #home section {
+    flex: 0 0 50%;  /* text takes 45% of space */
+    max-width: none;
+  }
+
+  #home img {
+    flex: 0 0 50%;  /* image takes the rest */
+    position: absolute; /* remove absolute so it respects flex */
+    bottom: 0;
+    right: 0;
+    margin-left: 0;
+    margin-right: 7%;
+  }
+}
+
+
 
   </style>
 </head>
@@ -121,7 +143,7 @@
   </section>
 
   <!-- Profile Image -->
-<img src="assets/img/IZZY1.PNG" 
+<!-- <img src="assets/img/IZZY1.PNG" 
      alt="Portrait of Nurul Izzah" 
      class="
        relative mx-auto 
@@ -129,6 +151,19 @@
        mb-0
        md:absolute md:bottom-0 md:right-0 
        md:h-[70vh] lg:h-screen
+       
+       transition-all duration-700 ease-in-out
+       opacity-0 animate-fadeIn
+     " /> -->
+     <!-- Profile Image -->
+<img src="assets/img/IZZY1.PNG" 
+     alt="Portrait of Nurul Izzah" 
+     class="
+       relative mx-auto 
+       h-[40vh] sm:h-[50vh] object-contain drop-shadow-2xl
+       mb-0
+       md:static md:h-[60vh]   <!-- Normal flow on iPad -->
+       lg:absolute lg:bottom-0 lg:right-0 lg:h-screen <!-- Absolute only on large screens -->
        
        transition-all duration-700 ease-in-out
        opacity-0 animate-fadeIn
