@@ -181,20 +181,82 @@
 </main>
 
 
+<!-- About Section -->
+<section id="about" class="min-h-screen flex items-center justify-center bg-beige px-6 py-20">
+  <div class="max-w-4xl w-full">
+    <!-- Section Title -->
+    <h2 class="text-3xl md:text-4xl font-bold text-brown text-center mb-8">About Me</h2>
+    
+    <!-- Intro -->
+    <p class="text-gray-800 leading-relaxed text-center mb-12">
+      I’m <span class="font-semibold text-brown">Nurul Izzah</span>, a passionate software engineer who loves creating
+      functional and aesthetic web applications. My focus is on developing
+      solutions that enhance user experience and bring ideas to life.
+    </p>
 
+    <!-- Experience Grid -->
+    <div class="grid md:grid-cols-2 gap-8 mb-12">
+      <!-- University Card -->
+      <div class="flex items-start gap-4 bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition">
+        <img src="assets/img/USM.png" alt="Universiti Sains Malaysia Logo" class="h-16 w-16 object-contain">
+        <div class="flex-1">
+          <h3 class="text-lg font-semibold text-brown">Universiti Sains Malaysia</h3>
+          <p class="text-gray-600 text-sm">Bachelor’s Degree in Software Engineering (Hons)</p>
+          <p class="text-gray-500 text-xs mb-2">Graduated: 25 September 2025</p>
+          <a href="https://drive.google.com/file/d/1X2mkWXWJYQyH6Ad9UPeJ7db7_P5J-0w-/view?usp=sharing" target="_blank"
+             class="inline-block px-3 py-1 text-xs bg-brown text-beige rounded-lg hover:bg-[#7a5c3f] transition">
+            View Certificate
+          </a>
+        </div>
+      </div>
 
-
-  <!-- About Section -->
-  <section id="about" class="min-h-screen flex items-center justify-center bg-beige px-6 py-20">
-    <div class="max-w-3xl text-center">
-      <h2 class="text-3xl md:text-4xl font-bold text-brown mb-6">About Me</h2>
-      <p class="text-gray-300 leading-relaxed">
-        I’m Nurul Izzah, a passionate software engineer who loves creating
-        functional and aesthetic web applications. My focus is on developing
-        solutions that enhance user experience and bring ideas to life.
-      </p>
+      <!-- Internship Card -->
+      <div class="flex items-start gap-4 bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition">
+        <img src="assets/img/HATIO.png" alt="Internship Company Logo" class="h-16 w-16 object-contain">
+        <div class="flex-1">
+          <h3 class="text-lg font-semibold text-brown">Hatio Sea Sdn Bhd</h3>
+          <p class="text-gray-600 text-sm">Internship – Support Engineer Team</p>
+          <p class="text-gray-500 text-xs mb-2">Mar 2024 – Sept 2024</p>
+              <button 
+      onclick="openModal()" 
+      class="inline-block px-3 py-1 text-xs bg-brown text-beige rounded-lg hover:bg-[#7a5c3f] transition">
+      View Photo
+    </button>
+        </div>
+      </div>
     </div>
-  </section>
+
+    <!-- Modal -->
+<div id="photoModal" class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center hidden z-50">
+  <div class="relative bg-white rounded-lg shadow-lg max-w-lg w-full p-4">
+    <!-- Close button -->
+    <button 
+      onclick="closeModal()" 
+      class="absolute top-2 right-2 text-gray-600 hover:text-black text-xl font-bold">
+      ✕
+    </button>
+    <!-- Image -->
+    <img src="assets/img/internship.jpg" alt="Internship Photo" class="rounded-lg">
+  </div>
+</div>
+
+    <!-- Skills -->
+    <div>
+      <h3 class="text-2xl font-semibold text-brown text-center mb-6">Skills</h3>
+      <div class="flex flex-wrap justify-center gap-3">
+        <span class="px-4 py-2 bg-white text-brown text-sm rounded-lg shadow hover:shadow-md transition">HTML</span>
+        <span class="px-4 py-2 bg-white text-brown text-sm rounded-lg shadow hover:shadow-md transition">CSS</span>
+        <span class="px-4 py-2 bg-white text-brown text-sm rounded-lg shadow hover:shadow-md transition">JavaScript</span>
+        <span class="px-4 py-2 bg-white text-brown text-sm rounded-lg shadow hover:shadow-md transition">PHP</span>
+        <span class="px-4 py-2 bg-white text-brown text-sm rounded-lg shadow hover:shadow-md transition">MySQL</span>
+        <span class="px-4 py-2 bg-white text-brown text-sm rounded-lg shadow hover:shadow-md transition">Bootstrap</span>
+        <span class="px-4 py-2 bg-white text-brown text-sm rounded-lg shadow hover:shadow-md transition">Tailwind</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 
 <!-- Project 1 -->
 <section id="final-year-project" class="min-h-screen flex flex-col items-center justify-center bg-black px-6 py-20">
@@ -339,7 +401,7 @@
       <img src="assets/img/rt1.png" alt="Final Year Project Image 1" class="w-full">
       <!-- Caption -->
       <div class="absolute bottom-0 left-0 w-full bg-black bg-opacity-60 text-white text-sm p-2 text-center opacity-0 group-hover:opacity-100 transition-opacity">
-        Final Year Project Image 1
+        User page with live countdown 
       </div>
     </div>
 
@@ -347,7 +409,7 @@
     <div class="relative w-full flex-shrink-0 group bg-white">
       <img src="assets/img/rt2.png" alt="Final Year Project Image 2" class="w-full">
       <div class="absolute bottom-0 left-0 w-full bg-black bg-opacity-60 text-white text-sm p-2 text-center opacity-0 group-hover:opacity-100 transition-opacity">
-        Final Year Project Image 2
+        Admin event management page
       </div>
     </div>
 
@@ -355,7 +417,7 @@
     <div class="relative w-full flex-shrink-0 group bg-white">
       <img src="assets/img/rt3.png" alt="Final Year Project Image 3" class="w-full">
       <div class="absolute bottom-0 left-0 w-full bg-black bg-opacity-60 text-white text-sm p-2 text-center opacity-0 group-hover:opacity-100 transition-opacity">
-        Final Year Project Image 3
+        Edit event example
       </div>
     </div>
 
@@ -363,7 +425,7 @@
     <div class="relative w-full flex-shrink-0 group bg-white">
       <img src="assets/img/rt4.png" alt="Final Year Project Image 3" class="w-full">
       <div class="absolute bottom-0 left-0 w-full bg-black bg-opacity-60 text-white text-sm p-2 text-center opacity-0 group-hover:opacity-100 transition-opacity">
-        Final Year Project Image 3
+        Listed events
       </div>
     </div>
 
@@ -371,7 +433,7 @@
     <div class="relative w-full flex-shrink-0 group bg-white">
       <img src="assets/img/rt5.png" alt="Final Year Project Image 3" class="w-full">
       <div class="absolute bottom-0 left-0 w-full bg-black bg-opacity-60 text-white text-sm p-2 text-center opacity-0 group-hover:opacity-100 transition-opacity">
-        Final Year Project Image 3
+        Admin inventory management page
       </div>
     </div>
     </div>
@@ -417,7 +479,7 @@
 
       <!-- Buttons -->
       <div class="flex flex-col md:flex-row md:gap-4 gap-2">
-        <a href="https://yourlivedemo.com" target="_blank"
+        <a href="https://drive.google.com/file/d/17mnpTcYjqWhKGVOzF0XU2t8iFn0LdFjF/view?usp=sharing" target="_blank"
            class="px-5 py-2 bg-beige text-black border border-black rounded-lg shadow-md hover:bg-[#bb987c] transition text-center">
            Video Demo
         </a>
@@ -440,19 +502,19 @@
   <!-- Footer -->
   <footer class="border-t border-gray-700  py-6 mt-auto">
     <nav class="max-w-7xl mx-auto flex justify-center space-x-8">
-      <a href="https://instagram.com" target="_blank" class="hover:text-nav">
+      <a href="https://www.instagram.com/heyizzahh_/" target="_blank" class="hover:text-nav">
         <svg class="h-7 w-7" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
           <rect width="20" height="20" x="2" y="2" rx="5" ry="5" stroke="currentColor" />
           <path d="M16 11.37a4 4 0 1 1-7.999.001 4 4 0 0 1 7.999-.001zM17.5 6.5h.01" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
       </a>
   <!-- LinkedIn -->
-  <a href="https://linkedin.com" target="_blank">
+  <a href="https://www.linkedin.com/in/nurulizzahpjs/" target="_blank">
     <img src="assets/icon/linkedin.png" alt="LinkedIn" class="h-7 w-7 hover:opacity-80">
   </a>
 
   <!-- GitHub -->
-  <a href="https://github.com" target="_blank">
+  <a href="https://github.com/NurulIzzah-pjs" target="_blank">
     <img src="assets/icon/github.png" alt="GitHub" class="h-7 w-7 hover:opacity-80">
   </a>
     </nav>
@@ -572,6 +634,14 @@ function prevSlide(button) {
     mobileProjectsMenu.classList.toggle("hidden");
     mobileProjectsIcon.classList.toggle("rotate-180");
   });
+</script>
+<script>
+  function openModal() {
+    document.getElementById('photoModal').classList.remove('hidden');
+  }
+  function closeModal() {
+    document.getElementById('photoModal').classList.add('hidden');
+  }
 </script>
 </body>
 </html>
